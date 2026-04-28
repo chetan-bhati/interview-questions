@@ -1,0 +1,42 @@
+[
+  {
+    "id": 401,
+    "question": "Explain time and space complexity with Big O notation",
+    "answer": "Big O notation describes algorithm performance as input size grows. O(1) is constant, O(n) is linear, O(n²) is quadratic, O(log n) is logarithmic. Space complexity measures memory used. Use Big O to compare algorithms and identify bottlenecks.",
+    "keyPoints": ["Scalability measure", "Growth rate", "Worst-case analysis"],
+    "followUps": ["Best vs worst vs average case?", "How to calculate Big O?", "Practical optimization?"],
+    "category": "DSA"
+  },
+  {
+    "id": 402,
+    "question": "What is a linked list and its advantages over arrays?",
+    "answer": "Linked list is a linear data structure with nodes connected via pointers. Advantages: dynamic size, efficient insertion/deletion at any position. Disadvantages: no random access, extra memory for pointers, slower search. Use when frequent insertion/deletion is needed.",
+    "keyPoints": ["Dynamic structure", "Pointer-based", "Efficient operations"],
+    "followUps": ["Singly vs doubly linked?", "Detect cycle in linked list?", "Reverse a linked list?"],
+    "category": "DSA"
+  },
+  {
+    "id": 403,
+    "question": "Explain binary search and when to use it",
+    "answer": "Binary search finds a target in a sorted array by repeatedly dividing the search space in half. Time complexity: O(log n). Requirement: array must be sorted. Use for fast lookups in large sorted datasets.",
+    "keyPoints": ["O(log n) complexity", "Divide and conquer", "Sorted requirement"],
+    "followUps": ["Implement binary search?", "Variations of binary search?", "When sorting cost is high?"],
+    "category": "DSA"
+  },
+  {
+    "id": 404,
+    "question": "What is a hash table and how does hashing work?",
+    "answer": "Hash table uses a hash function to map keys to array indices for O(1) average-case access. Collision handling: chaining or open addressing. Good hash function distributes keys uniformly to minimize collisions.",
+    "keyPoints": ["O(1) access", "Hash function", "Collision handling"],
+    "followUps": ["Load factor?", "Resizing strategy?", "Good hash function?"],
+    "category": "DSA"
+  },
+  {
+    "id": 405,
+    "question": "Explain trees, binary trees, and BST",
+    "answer": "Tree: hierarchical structure with parent-child nodes. Binary tree: each node has max 2 children. BST (Binary Search Tree): left child < parent < right child, enabling efficient search, insert, delete in O(log n).",
+    "keyPoints": ["Hierarchical structure", "Search efficiency", "Ordered property"],
+    "followUps": ["Tree traversal methods?", "Self-balancing trees?", "Use cases?"],
+    "category": "DSA"
+  }
+]

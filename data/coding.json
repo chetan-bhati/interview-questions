@@ -1,0 +1,42 @@
+[
+  {
+    "id": 501,
+    "question": "Reverse a string and array",
+    "answer": "String reversal: use slicing s[::-1] in Python or reverse() in other languages. Array reversal: use two pointers from start and end, swap elements until they meet. Time: O(n), Space: O(1) for in-place reversal.",
+    "keyPoints": ["Two-pointer technique", "In-place reversal", "String slicing"],
+    "followUps": ["Reverse linked list?", "Reverse only letters in string?", "Reverse words?"],
+    "category": "Coding"
+  },
+  {
+    "id": 502,
+    "question": "Find the maximum element in an array",
+    "answer": "Iterate through array maintaining a running maximum. Time: O(n), Space: O(1). For sorted array, return last element in O(1). For unsorted, linear scan is required.",
+    "keyPoints": ["Single pass", "Comparison", "Edge cases"],
+    "followUps": ["Find min and max together?", "k largest elements?", "Find second largest?"],
+    "category": "Coding"
+  },
+  {
+    "id": 503,
+    "question": "Check if a number is palindrome",
+    "answer": "Convert to string and check if it equals its reverse, OR reverse the number mathematically by extracting digits. Time: O(log n) for digits, Space: O(1) for numerical approach or O(log n) for string.",
+    "keyPoints": ["String manipulation", "Numerical approach", "Edge cases with negatives"],
+    "followUps": ["Palindrome string?", "Palindrome with spaces?", "Largest palindrome?"],
+    "category": "Coding"
+  },
+  {
+    "id": 504,
+    "question": "Remove duplicates from an array",
+    "answer": "Sorted array: use two pointers, skip duplicates, modify in-place O(n) time, O(1) space. Unsorted: use set or hash map O(n) time, O(n) space. Choose based on constraints.",
+    "keyPoints": ["Two-pointer", "Hash map", "In-place vs extra space"],
+    "followUps": ["Remove duplicates keeping order?", "Remove duplicates in linked list?", "LRU cache?"],
+    "category": "Coding"
+  },
+  {
+    "id": 505,
+    "question": "Implement a function to check if a string is anagram",
+    "answer": "Anagrams have same characters with same frequency. Solutions: sort both and compare, OR use character frequency map. Time: O(n log n) for sorting or O(n) for hashing. Space: O(1) for fixed alphabet.",
+    "keyPoints": ["Character frequency", "Sorting", "Hash map"],
+    "followUps": ["Group anagrams?", "Valid anagram variations?", "Case sensitivity?"],
+    "category": "Coding"
+  }
+]

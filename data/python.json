@@ -1,0 +1,42 @@
+[
+  {
+    "id": 101,
+    "question": "Explain list comprehensions in Python with an example",
+    "answer": "List comprehensions provide a concise way to create lists by applying an expression to each element in an iterable. Example: [x*2 for x in range(5)] produces [0, 2, 4, 6, 8]. They are more readable and faster than using a for loop with append().",
+    "keyPoints": ["Concise syntax", "Readable code", "Performance benefit"],
+    "followUps": ["How do they compare to map/filter?", "When would you avoid them?", "Can you use conditions in comprehensions?"],
+    "category": "Python"
+  },
+  {
+    "id": 102,
+    "question": "What is the difference between == and 'is' in Python?",
+    "answer": "== checks value equality (whether two objects have the same value), while 'is' checks identity (whether two variables point to the same object in memory). For example: [1,2] == [1,2] is True, but [1,2] is [1,2] is False.",
+    "keyPoints": ["Value vs identity", "Memory reference", "Use cases"],
+    "followUps": ["When should you use 'is'?", "How does this affect None checks?", "What about integers?"],
+    "category": "Python"
+  },
+  {
+    "id": 103,
+    "question": "Explain decorators in Python",
+    "answer": "Decorators are functions that modify or enhance another function or class without permanently changing it. They wrap the original function and are applied using @decorator_name syntax. Common examples include @property, @staticmethod, and custom decorators for logging, caching, etc.",
+    "keyPoints": ["Function wrapping", "Higher-order functions", "@ syntax"],
+    "followUps": ["How do you write custom decorators?", "Can you stack decorators?", "Decorators with arguments?"],
+    "category": "Python"
+  },
+  {
+    "id": 104,
+    "question": "What are generators and yield in Python?",
+    "answer": "Generators are functions that use 'yield' to return values one at a time, creating an iterator lazily. They are memory-efficient for large datasets as they generate values on-the-fly instead of storing all values in memory.",
+    "keyPoints": ["Lazy evaluation", "Memory efficient", "Iterator protocol"],
+    "followUps": ["When to use generators?", "Difference from lists?", "How does yield work internally?"],
+    "category": "Python"
+  },
+  {
+    "id": 105,
+    "question": "Explain *args and **kwargs",
+    "answer": "*args allows a function to accept any number of positional arguments as a tuple. **kwargs allows keyword arguments as a dictionary. They enable flexible function signatures and are useful for decorators and wrapper functions.",
+    "keyPoints": ["Variable arguments", "Flexible signatures", "Unpacking"],
+    "followUps": ["When to use each?", "Can you combine them?", "How does unpacking work?"],
+    "category": "Python"
+  }
+]

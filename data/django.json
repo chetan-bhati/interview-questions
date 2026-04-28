@@ -1,0 +1,42 @@
+[
+  {
+    "id": 201,
+    "question": "Explain Django ORM and QuerySet",
+    "answer": "Django ORM allows interaction with databases using Python objects instead of raw SQL. QuerySet is a collection of database queries represented as a list-like object. QuerySets are lazy and only execute when needed (evaluated). Example: User.objects.filter(active=True) returns a QuerySet.",
+    "keyPoints": ["Object-relational mapping", "QuerySet lazy evaluation", "Filter chaining"],
+    "followUps": ["How do you optimize queries?", "What is select_related?", "Explain prefetch_related?"],
+    "category": "Django"
+  },
+  {
+    "id": 202,
+    "question": "What is middleware in Django?",
+    "answer": "Middleware is a hook/plugin system that allows you to process requests and responses globally. It operates in layers: request goes down through middleware, then to the view, then response comes back up. Common examples: authentication, CSRF protection, logging.",
+    "keyPoints": ["Request-response cycle", "Global processing", "Layered architecture"],
+    "followUps": ["How do you create custom middleware?", "Order of execution?", "Use cases?"],
+    "category": "Django"
+  },
+  {
+    "id": 203,
+    "question": "Explain Django signals",
+    "answer": "Signals allow decoupled applications to get notified when certain actions occur. They follow the observer pattern. Common signals: pre_save, post_save, pre_delete, post_delete. Example: sending an email after a user registers.",
+    "keyPoints": ["Observer pattern", "Decoupling", "Event handling"],
+    "followUps": ["When to use signals?", "Can you chain signals?", "Performance considerations?"],
+    "category": "Django"
+  },
+  {
+    "id": 204,
+    "question": "What is Django REST Framework?",
+    "answer": "Django REST Framework (DRF) is a powerful library for building REST APIs in Django. It provides serializers for data validation, viewsets for CRUD operations, authentication, permissions, and pagination out of the box.",
+    "keyPoints": ["REST API building", "Serializers", "Authentication & permissions"],
+    "followUps": ["Difference between APIView and ViewSet?", "How to handle authentication?", "Custom permissions?"],
+    "category": "Django"
+  },
+  {
+    "id": 205,
+    "question": "Explain Django migrations",
+    "answer": "Migrations are a way to manage database schema changes in Django. They track changes to models and allow you to apply or revert changes across environments. Use 'makemigrations' to create migrations and 'migrate' to apply them.",
+    "keyPoints": ["Schema versioning", "Reversible changes", "Environment consistency"],
+    "followUps": ["How to handle data migrations?", "Conflict resolution?", "Best practices?"],
+    "category": "Django"
+  }
+]

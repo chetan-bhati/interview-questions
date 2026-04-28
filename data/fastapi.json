@@ -1,0 +1,42 @@
+[
+  {
+    "id": 301,
+    "question": "What is FastAPI and its key advantages?",
+    "answer": "FastAPI is a modern Python web framework for building APIs with automatic documentation, async support, and type hints. Key advantages: automatic OpenAPI/Swagger docs, built-in validation, async/await support, high performance, easy deployment.",
+    "keyPoints": ["Type hints", "Async support", "Auto documentation"],
+    "followUps": ["How does it compare to Flask?", "Async vs sync endpoints?", "Dependency injection system?"],
+    "category": "FastAPI"
+  },
+  {
+    "id": 302,
+    "question": "Explain Pydantic models in FastAPI",
+    "answer": "Pydantic models define the structure and validation of request/response data using Python class definitions. FastAPI automatically validates incoming data against these models and returns 422 errors for invalid data. They also generate OpenAPI schema documentation.",
+    "keyPoints": ["Data validation", "Type checking", "Schema generation"],
+    "followUps": ["How to define required fields?", "Custom validators?", "Nested models?"],
+    "category": "FastAPI"
+  },
+  {
+    "id": 303,
+    "question": "How do you handle authentication in FastAPI?",
+    "answer": "FastAPI provides security utilities for implementing various auth schemes: JWT tokens, API keys, OAuth2, etc. Use SecurityScopes and Depends() to inject authentication logic. FastAPI automatically integrates with OpenAPI for documenting security.",
+    "keyPoints": ["Security schemes", "Dependency injection", "Token-based auth"],
+    "followUps": ["Implement JWT auth?", "Refresh tokens?", "Role-based access?"],
+    "category": "FastAPI"
+  },
+  {
+    "id": 304,
+    "question": "What is dependency injection in FastAPI?",
+    "answer": "Dependency Injection using Depends() allows you to declare dependencies for endpoints. Dependencies can be reused across multiple endpoints, handle validation, database sessions, authentication. They promote code reusability and testability.",
+    "keyPoints": ["Reusability", "Composition", "Automatic resolution"],
+    "followUps": ["Nested dependencies?", "Sub-dependencies?", "Caching behavior?"],
+    "category": "FastAPI"
+  },
+  {
+    "id": 305,
+    "question": "How to handle async operations in FastAPI?",
+    "answer": "FastAPI supports async/await natively. Use 'async def' for endpoints to run concurrently without blocking. Ideal for I/O operations like database queries, API calls. FastAPI runs async code in thread pools, handling both sync and async endpoints.",
+    "keyPoints": ["Concurrency", "Non-blocking", "Performance"],
+    "followUps": ["When to use async?", "Mixing async/sync?", "Performance implications?"],
+    "category": "FastAPI"
+  }
+]
