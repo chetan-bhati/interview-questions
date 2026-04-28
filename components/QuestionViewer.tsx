@@ -23,6 +23,15 @@ export default function QuestionViewer({ q }: { q?: Question }) {
           <p className="text-slate-300 text-lg leading-relaxed">{q.answer}</p>
         </section>
 
+        {q.code && (
+          <section className="mb-8 pb-8 border-b border-slate-800">
+            <h3 className="text-xs uppercase font-semibold text-slate-400 tracking-wide mb-4">Code</h3>
+            <pre className="overflow-x-auto rounded-xl border border-slate-800 bg-slate-950 p-4 text-sm leading-6 text-slate-200">
+              <code className="font-mono whitespace-pre-wrap">{q.code}</code>
+            </pre>
+          </section>
+        )}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xs uppercase font-semibold text-slate-400 tracking-wide mb-4">Key Points</h3>

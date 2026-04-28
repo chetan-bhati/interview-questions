@@ -1,16 +1,15 @@
 "use client"
 
 import React, { useMemo, useState } from 'react'
-import { Menu } from 'lucide-react'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
 import QuestionViewer from '../components/QuestionViewer'
 import NavigationControls from '../components/NavigationControls'
-import { getCategories, searchQuestionsByCategory } from '../data/loader'
-import type { Question } from '../types/question'
+import { getCategories, getCategoryCounts, searchQuestionsByCategory } from '../data/loader'
 
 export default function Page() {
   const categories = useMemo(() => getCategories(), [])
+  const categoryCounts = useMemo(() => getCategoryCounts(), [])
   const [activeCategory, setActiveCategory] = useState<string>(categories[0] ?? 'HR')
   const [searchQuery, setSearchQuery] = useState('')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -37,31 +36,36 @@ export default function Page() {
       
       {/* Mobile Sidebar Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-y-0 left-0 z-40 md:hidden">
-          <Sidebar categories={categories} active={activeCategory} onSelect={(c) => { setActiveCategory(c); setMobileMenuOpen(false); }} />
+        <div className="fixed inset-0 z-40 md:hidden">
+          <div className="absolute inset-0 bg-black/50" onClick={() => setMobileMenuOpen(false)} />
+          <Sidebar
+            mobile
+            categoryCounts={categoryCounts}
+            categories={categories}
+            active={activeCategory}
+            onClose={() => setMobileMenuOpen(false)}
+            onSelect={(c) => {
+              setActiveCategory(c)
+              setMobileMenuOpen(false)
+            }}
+          />
         </div>
       )}
 
       {/* Desktop Sidebar */}
-      <Sidebar categories={categories} active={activeCategory} onSelect={setActiveCategory} />
+      <Sidebar categories={categories} categoryCounts={categoryCounts} active={activeCategory} onSelect={setActiveCategory} />
 
       {/* Main Content */}
       <div className="flex flex-col flex-1 overflow-hidden">
-        <Header category={activeCategory} searchQuery={searchQuery} onSearchChange={setSearchQuery} />
+        <Header
+          category={activeCategory}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          onMenuClick={() => setMobileMenuOpen(true)}
+        />
 
         <main className="flex-1 overflow-y-auto">
           <div className="px-4 sm:px-6 py-6 md:py-8">
-            {/* Mobile category selector */}
-            <div className="md:hidden mb-6">
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="w-full flex items-center gap-2 px-4 py-3 rounded-lg border border-slate-700 text-slate-200 text-sm font-medium hover:bg-slate-800 hover:border-slate-600"
-              >
-                <Menu className="w-4 h-4" />
-                Categories
-              </button>
-            </div>
-
             {/* Search indicator */}
             {searchQuery && (
               <div className="max-w-3xl mx-auto mb-4 p-3 rounded-lg bg-indigo-900/20 border border-indigo-800 text-sm text-indigo-300">

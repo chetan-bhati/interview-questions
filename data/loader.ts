@@ -34,6 +34,14 @@ export const getCategories = (): string[] => {
   return ['HR', 'Python', 'Django', 'FastAPI', 'DSA', 'Coding', 'System Design', 'AWS', 'Docker', 'DevOps', 'Gen AI'].filter((c) => categories.includes(c))
 }
 
+// Get question counts by category
+export const getCategoryCounts = (): Record<string, number> => {
+  return allQuestions.reduce<Record<string, number>>((counts, question) => {
+    counts[question.category] = (counts[question.category] ?? 0) + 1
+    return counts
+  }, {})
+}
+
 // Get questions by category
 export const getQuestionsByCategory = (category: string): Question[] => {
   return allQuestions.filter((q) => q.category === category)
