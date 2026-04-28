@@ -65,12 +65,18 @@ export default function Sidebar({ categories, active, onSelect, mobile = false, 
                 {CATEGORY_ICONS[c] || <BookOpen className="w-5 h-5" />}
               </span>
               <span className="flex-1">{c}</span>
-              {typeof count === 'number' && (
-                <span className="text-xs rounded-full px-2 py-1 bg-slate-800 text-slate-300 border border-slate-700">
-                  {count}
-                </span>
-              )}
-              {isActive && <span className="text-xs bg-indigo-600 text-white rounded-full w-5 h-5 flex items-center justify-center">✓</span>}
+              <span className="flex w-16 shrink-0 items-center justify-end gap-2">
+                {typeof count === 'number' && (
+                  <span className="min-w-8 text-center text-xs rounded-full px-2 py-1 bg-slate-800/70 text-slate-400 border border-slate-700/60 tabular-nums">
+                    {count}
+                  </span>
+                )}
+                {isActive ? (
+                  <span className="text-xs bg-indigo-600 text-white rounded-full w-5 h-5 flex items-center justify-center shrink-0">✓</span>
+                ) : (
+                  <span className="w-5 h-5 shrink-0" aria-hidden="true" />
+                )}
+              </span>
             </button>
           )
         })}

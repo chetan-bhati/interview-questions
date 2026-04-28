@@ -25,7 +25,6 @@ export default function Header({ category, searchQuery, onSearchChange, onMenuCl
             </button>
             <div className="min-w-0">
               <h1 className="text-lg font-semibold text-slate-50 truncate">{category} Questions</h1>
-              <p className="text-sm text-slate-400 hidden sm:block">Tailored for engineers • Master your interview skills</p>
             </div>
           </div>
           <div className="relative hidden sm:block w-64">
