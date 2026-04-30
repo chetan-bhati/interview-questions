@@ -3,40 +3,400 @@
     "id": 101,
     "question": "Explain list comprehensions in Python with an example",
     "answer": "List comprehensions provide a concise way to create lists by applying an expression to each element in an iterable. Example: [x*2 for x in range(5)] produces [0, 2, 4, 6, 8]. They are more readable and faster than using a for loop with append().",
-    "keyPoints": ["Concise syntax", "Readable code", "Performance benefit"],
-    "followUps": ["How do they compare to map/filter?", "When would you avoid them?", "Can you use conditions in comprehensions?"],
+    "keyPoints": [
+      "Concise syntax",
+      "Readable code",
+      "Performance benefit"
+    ],
+    "followUps": [
+      "How do they compare to map/filter?",
+      "When would you avoid them?",
+      "Can you use conditions in comprehensions?"
+    ],
     "category": "Python"
   },
   {
     "id": 102,
     "question": "What is the difference between == and 'is' in Python?",
     "answer": "== checks value equality (whether two objects have the same value), while 'is' checks identity (whether two variables point to the same object in memory). For example: [1,2] == [1,2] is True, but [1,2] is [1,2] is False.",
-    "keyPoints": ["Value vs identity", "Memory reference", "Use cases"],
-    "followUps": ["When should you use 'is'?", "How does this affect None checks?", "What about integers?"],
+    "keyPoints": [
+      "Value vs identity",
+      "Memory reference",
+      "Use cases"
+    ],
+    "followUps": [
+      "When should you use 'is'?",
+      "How does this affect None checks?",
+      "What about integers?"
+    ],
     "category": "Python"
   },
   {
     "id": 103,
     "question": "Explain decorators in Python",
     "answer": "Decorators are functions that modify or enhance another function or class without permanently changing it. They wrap the original function and are applied using @decorator_name syntax. Common examples include @property, @staticmethod, and custom decorators for logging, caching, etc.",
-    "keyPoints": ["Function wrapping", "Higher-order functions", "@ syntax"],
-    "followUps": ["How do you write custom decorators?", "Can you stack decorators?", "Decorators with arguments?"],
+    "keyPoints": [
+      "Function wrapping",
+      "Higher-order functions",
+      "@ syntax"
+    ],
+    "followUps": [
+      "How do you write custom decorators?",
+      "Can you stack decorators?",
+      "Decorators with arguments?"
+    ],
     "category": "Python"
   },
   {
     "id": 104,
     "question": "What are generators and yield in Python?",
     "answer": "Generators are functions that use 'yield' to return values one at a time, creating an iterator lazily. They are memory-efficient for large datasets as they generate values on-the-fly instead of storing all values in memory.",
-    "keyPoints": ["Lazy evaluation", "Memory efficient", "Iterator protocol"],
-    "followUps": ["When to use generators?", "Difference from lists?", "How does yield work internally?"],
+    "keyPoints": [
+      "Lazy evaluation",
+      "Memory efficient",
+      "Iterator protocol"
+    ],
+    "followUps": [
+      "When to use generators?",
+      "Difference from lists?",
+      "How does yield work internally?"
+    ],
     "category": "Python"
   },
   {
     "id": 105,
     "question": "Explain *args and **kwargs",
     "answer": "*args allows a function to accept any number of positional arguments as a tuple. **kwargs allows keyword arguments as a dictionary. They enable flexible function signatures and are useful for decorators and wrapper functions.",
-    "keyPoints": ["Variable arguments", "Flexible signatures", "Unpacking"],
-    "followUps": ["When to use each?", "Can you combine them?", "How does unpacking work?"],
+    "keyPoints": [
+      "Variable arguments",
+      "Flexible signatures",
+      "Unpacking"
+    ],
+    "followUps": [
+      "When to use each?",
+      "Can you combine them?",
+      "How does unpacking work?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 1,
+    "question": "What is Python?",
+    "answer": "Python is a high-level, interpreted, dynamically typed programming language known for its simplicity and readability. It supports multiple programming paradigms such as object-oriented, procedural, and functional programming.",
+    "keyPoints": [
+      "Interpreted language",
+      "Dynamic typing",
+      "Multi-paradigm"
+    ],
+    "followUps": [
+      "Why is Python popular?",
+      "Compiled vs interpreted?",
+      "Where is Python used?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 2,
+    "question": "What is a dynamically typed language?",
+    "answer": "In a dynamically typed language like Python, variable types are determined at runtime rather than explicitly declared. This allows flexibility but can lead to runtime errors if not handled carefully.",
+    "keyPoints": [
+      "Runtime type checking",
+      "Flexible variables",
+      "No type declaration"
+    ],
+    "followUps": [
+      "Static vs dynamic typing?",
+      "Is Python strongly typed?",
+      "Type hints usage?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 3,
+    "question": "What are Python data types?",
+    "answer": "Python has built-in data types such as int, float, str, list, tuple, set, and dict. These types define the kind of data a variable can hold.",
+    "keyPoints": [
+      "Built-in types",
+      "Mutable vs immutable",
+      "Dynamic nature"
+    ],
+    "followUps": [
+      "Difference between list and tuple?",
+      "Set vs dict?",
+      "Custom data types?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 4,
+    "question": "Difference between list and tuple?",
+    "answer": "Lists are mutable and can be modified, while tuples are immutable and cannot be changed after creation. Tuples are faster and use less memory.",
+    "keyPoints": [
+      "Mutability",
+      "Performance",
+      "Use cases"
+    ],
+    "followUps": [
+      "Why tuples are faster?",
+      "Tuple unpacking?",
+      "When to use list vs tuple?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 5,
+    "question": "What are Python functions?",
+    "answer": "Functions are reusable blocks of code defined using the 'def' keyword. They help in modular programming and reduce code duplication.",
+    "keyPoints": [
+      "Code reuse",
+      "Modularity",
+      "Arguments & return"
+    ],
+    "followUps": [
+      "Default arguments?",
+      "Lambda vs function?",
+      "Recursive functions?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 6,
+    "question": "Explain OOP concepts in Python",
+    "answer": "Python supports Object-Oriented Programming including encapsulation, inheritance, polymorphism, and abstraction. Classes and objects are used to model real-world entities.",
+    "keyPoints": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism"
+    ],
+    "followUps": [
+      "Multiple inheritance?",
+      "Method overriding?",
+      "Abstract classes?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 7,
+    "question": "What is inheritance?",
+    "answer": "Inheritance allows a class to inherit properties and methods from another class. It promotes code reuse and hierarchical relationships.",
+    "keyPoints": [
+      "Code reuse",
+      "Base/child class",
+      "Extensibility"
+    ],
+    "followUps": [
+      "Types of inheritance?",
+      "Diamond problem?",
+      "super() usage?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 8,
+    "question": "What is polymorphism?",
+    "answer": "Polymorphism allows methods to have different implementations based on the object. It enables flexibility and code reuse.",
+    "keyPoints": [
+      "Same method, different behavior",
+      "Overriding",
+      "Duck typing"
+    ],
+    "followUps": [
+      "Operator overloading?",
+      "Method overloading?",
+      "Real use cases?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 9,
+    "question": "What are decorators?",
+    "answer": "Decorators are functions that wrap another function to extend its behavior without modifying it. They are used with @ syntax.",
+    "keyPoints": [
+      "Function wrapping",
+      "Reusable logic",
+      "@ syntax"
+    ],
+    "followUps": [
+      "Custom decorators?",
+      "Decorator chaining?",
+      "Real-world use?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 10,
+    "question": "What are generators?",
+    "answer": "Generators are functions that yield values one at a time using 'yield'. They are memory efficient and used for large datasets.",
+    "keyPoints": [
+      "Lazy evaluation",
+      "Iterator",
+      "Memory efficient"
+    ],
+    "followUps": [
+      "Generator vs iterator?",
+      "Use cases?",
+      "Yield vs return?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 11,
+    "question": "What is GIL?",
+    "answer": "Global Interpreter Lock (GIL) ensures that only one thread executes Python bytecode at a time, limiting multi-threading performance in CPU-bound tasks.",
+    "keyPoints": [
+      "Thread locking",
+      "CPython limitation",
+      "Concurrency"
+    ],
+    "followUps": [
+      "How to bypass GIL?",
+      "Multiprocessing?",
+      "Async vs threads?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 12,
+    "question": "What is multithreading vs multiprocessing?",
+    "answer": "Multithreading runs multiple threads in one process sharing memory, while multiprocessing runs separate processes with independent memory.",
+    "keyPoints": [
+      "Shared vs isolated memory",
+      "Performance",
+      "Use cases"
+    ],
+    "followUps": [
+      "When to use each?",
+      "CPU vs IO tasks?",
+      "Overhead?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 13,
+    "question": "What is async/await?",
+    "answer": "Async/await is used for writing asynchronous code in Python, allowing non-blocking execution for I/O operations.",
+    "keyPoints": [
+      "Event loop",
+      "Non-blocking",
+      "Concurrency"
+    ],
+    "followUps": [
+      "Async vs threading?",
+      "How event loop works?",
+      "Use in FastAPI?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 14,
+    "question": "What is memory management in Python?",
+    "answer": "Python uses reference counting and garbage collection to manage memory automatically.",
+    "keyPoints": [
+      "Reference count",
+      "Garbage collector",
+      "Memory leaks"
+    ],
+    "followUps": [
+      "Circular references?",
+      "gc module?",
+      "Optimization?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 15,
+    "question": "What is shallow copy vs deep copy?",
+    "answer": "Shallow copy copies references, while deep copy creates independent objects including nested ones.",
+    "keyPoints": [
+      "copy vs deepcopy",
+      "Nested objects",
+      "Side effects"
+    ],
+    "followUps": [
+      "When to use?",
+      "Performance?",
+      "Real bug example?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 16,
+    "question": "What is a context manager?",
+    "answer": "A context manager handles resource allocation and cleanup using 'with' statement.",
+    "keyPoints": [
+      "with statement",
+      "Resource cleanup",
+      "__enter__/__exit__"
+    ],
+    "followUps": [
+      "Custom context manager?",
+      "contextlib?",
+      "Why useful?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 17,
+    "question": "What is __init__ method?",
+    "answer": "__init__ is a constructor method called when an object is created. It initializes object attributes.",
+    "keyPoints": [
+      "Constructor",
+      "Initialization",
+      "Object setup"
+    ],
+    "followUps": [
+      "__new__ vs __init__?",
+      "Default values?",
+      "Best practices?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 18,
+    "question": "What is __str__ vs __repr__?",
+    "answer": "__str__ is for user-friendly output, while __repr__ is for developer/debugging representation.",
+    "keyPoints": [
+      "Readable vs debug",
+      "Object representation",
+      "Logging"
+    ],
+    "followUps": [
+      "When to use each?",
+      "Fallback behavior?",
+      "Best practice?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 19,
+    "question": "What is monkey patching?",
+    "answer": "Monkey patching is modifying code at runtime to change behavior dynamically.",
+    "keyPoints": [
+      "Runtime modification",
+      "Flexible but risky",
+      "Testing usage"
+    ],
+    "followUps": [
+      "Use cases?",
+      "Alternatives?",
+      "Risks?"
+    ],
+    "category": "Python"
+  },
+  {
+    "id": 20,
+    "question": "What is Python packaging?",
+    "answer": "Packaging involves organizing code into modules and managing dependencies using tools like pip, venv, or poetry.",
+    "keyPoints": [
+      "Dependency management",
+      "Virtual env",
+      "Distribution"
+    ],
+    "followUps": [
+      "pip vs poetry?",
+      "requirements.txt?",
+      "Version control?"
+    ],
     "category": "Python"
   }
 ]
