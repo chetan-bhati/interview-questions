@@ -2,65 +2,37 @@
   {
     "id": 101,
     "question": "Explain list comprehensions in Python with an example",
-    "answer": "List comprehensions provide a concise way to create lists by applying an expression to each element in an iterable. Example: [x*2 for x in range(5)] produces [0, 2, 4, 6, 8]. They are more readable and faster than using a for loop with append().",
-    "keyPoints": [
-      "Concise syntax",
-      "Readable code",
-      "Performance benefit"
-    ],
-    "followUps": [
-      "How do they compare to map/filter?",
-      "When would you avoid them?",
-      "Can you use conditions in comprehensions?"
-    ],
+    "answer": "List comprehensions provide a concise way to create lists by applying an expression to each element in an iterable. They improve readability and are often faster than traditional loops for simple transformations.",
+    "code": "nums = [1,2,3,4]\nsquares = [x*x for x in nums]\nprint(squares)  # [1,4,9,16]",
+    "keyPoints": ["Concise syntax", "Readable code", "Better performance"],
+    "followUps": ["How do they compare to map/filter?", "When should you avoid them?", "Can you add conditions?"],
     "category": "Python"
   },
   {
     "id": 102,
     "question": "What is the difference between == and 'is' in Python?",
-    "answer": "== checks value equality (whether two objects have the same value), while 'is' checks identity (whether two variables point to the same object in memory). For example: [1,2] == [1,2] is True, but [1,2] is [1,2] is False.",
-    "keyPoints": [
-      "Value vs identity",
-      "Memory reference",
-      "Use cases"
-    ],
-    "followUps": [
-      "When should you use 'is'?",
-      "How does this affect None checks?",
-      "What about integers?"
-    ],
+    "answer": "The '==' operator checks if two objects have the same value, while 'is' checks if both variables refer to the same object in memory. Use 'is' for identity checks like None.",
+    "code": "a = [1,2]\nb = [1,2]\nprint(a == b)  # True\nprint(a is b)  # False",
+    "keyPoints": ["Value vs identity", "Memory reference", "Use 'is' for None"],
+    "followUps": ["Why use 'is None'?", "What about small integers?", "Mutable vs immutable?"],
     "category": "Python"
   },
   {
     "id": 103,
     "question": "Explain decorators in Python",
-    "answer": "Decorators are functions that modify or enhance another function or class without permanently changing it. They wrap the original function and are applied using @decorator_name syntax. Common examples include @property, @staticmethod, and custom decorators for logging, caching, etc.",
-    "keyPoints": [
-      "Function wrapping",
-      "Higher-order functions",
-      "@ syntax"
-    ],
-    "followUps": [
-      "How do you write custom decorators?",
-      "Can you stack decorators?",
-      "Decorators with arguments?"
-    ],
+    "answer": "Decorators are functions that wrap another function to extend its behavior without modifying its code. They are commonly used for logging, authentication, and caching.",
+    "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before\")\n        func()\n        print(\"After\")\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print(\"Hello\")\n\nsay_hello()",
+    "keyPoints": ["Function wrapping", "Reusability", "@ syntax"],
+    "followUps": ["Decorators with arguments?", "Stack decorators?", "Real use cases?"],
     "category": "Python"
   },
   {
     "id": 104,
     "question": "What are generators and yield in Python?",
-    "answer": "Generators are functions that use 'yield' to return values one at a time, creating an iterator lazily. They are memory-efficient for large datasets as they generate values on-the-fly instead of storing all values in memory.",
-    "keyPoints": [
-      "Lazy evaluation",
-      "Memory efficient",
-      "Iterator protocol"
-    ],
-    "followUps": [
-      "When to use generators?",
-      "Difference from lists?",
-      "How does yield work internally?"
-    ],
+    "answer": "Generators use 'yield' to produce values one at a time instead of returning all values at once. This makes them memory-efficient for large data processing.",
+    "code": "def gen():\n    for i in range(3):\n        yield i\n\nfor val in gen():\n    print(val)",
+    "keyPoints": ["Lazy evaluation", "Memory efficient", "Iterator"],
+    "followUps": ["Difference from list?", "When to use?", "Generator expression?"],
     "category": "Python"
   },
   {
