@@ -3,40 +3,30 @@
     "id": 901,
     "question": "What is DevOps and its core principles?",
     "answer": "DevOps bridges development and operations through automation and collaboration. Core principles: continuous integration (CI), continuous deployment (CD), infrastructure-as-code, monitoring, quick feedback. Goals: faster delivery, reliability, scalability.",
-    "keyPoints": ["Automation", "Collaboration", "Continuous delivery"],
-    "followUps": ["CI/CD pipeline?", "Infrastructure-as-code tools?", "Monitoring tools?"],
     "category": "DevOps"
   },
   {
     "id": 902,
     "question": "Explain CI/CD pipelines",
     "answer": "CI: automatically build, test code on every commit. CD: automatically deploy to production. Pipeline stages: source, build, test, deploy, monitor. Reduces manual work, catches errors early, enables fast iteration.",
-    "keyPoints": ["Automation", "Early feedback", "Fast iteration"],
-    "followUps": ["Tools: Jenkins, GitLab CI?", "Deployment strategies?", "Rollback procedures?"],
     "category": "DevOps"
   },
   {
     "id": 903,
     "question": "What is Kubernetes and why is it important?",
     "answer": "Kubernetes orchestrates containerized applications across clusters. Features: auto-scaling, self-healing, rolling updates, service discovery, load balancing. Essential for managing microservices at scale.",
-    "keyPoints": ["Container orchestration", "Auto-scaling", "Self-healing"],
-    "followUps": ["Pods, services, deployments?", "Ingress controller?", "StatefulSets?"],
     "category": "DevOps"
   },
   {
     "id": 904,
     "question": "Explain Infrastructure as Code (IaC)",
     "answer": "IaC manages infrastructure through code (Terraform, CloudFormation, Ansible). Benefits: version control, reproducibility, automation, consistency. Infrastructure changes tracked like code changes.",
-    "keyPoints": ["Code-driven infrastructure", "Version control", "Automation"],
-    "followUps": ["Terraform vs CloudFormation?", "State management?", "Best practices?"],
     "category": "DevOps"
   },
   {
     "id": 905,
     "question": "What is monitoring and logging in DevOps?",
     "answer": "Monitoring tracks system health: metrics, alerts, dashboards. Logging captures application events for debugging. Tools: Prometheus, Grafana, ELK, Datadog. Essential for identifying issues, performance optimization, security.",
-    "keyPoints": ["Health tracking", "Alert management", "Debugging"],
-    "followUps": ["Log levels?", "Metrics vs logs?", "Alert fatigue?"],
     "category": "DevOps"
   }
 ]

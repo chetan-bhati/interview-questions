@@ -1,42 +1,308 @@
 [
   {
-    "id": 201,
-    "question": "Explain Django ORM and QuerySet",
-    "answer": "Django ORM allows interaction with databases using Python objects instead of raw SQL. QuerySet is a collection of database queries represented as a list-like object. QuerySets are lazy and only execute when needed (evaluated). Example: User.objects.filter(active=True) returns a QuerySet.",
-    "keyPoints": ["Object-relational mapping", "QuerySet lazy evaluation", "Filter chaining"],
-    "followUps": ["How do you optimize queries?", "What is select_related?", "Explain prefetch_related?"],
+    "id": 1,
+    "question": "What is Django?",
+    "answer": "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.",
     "category": "Django"
   },
   {
-    "id": 202,
-    "question": "What is middleware in Django?",
-    "answer": "Middleware is a hook/plugin system that allows you to process requests and responses globally. It operates in layers: request goes down through middleware, then to the view, then response comes back up. Common examples: authentication, CSRF protection, logging.",
-    "keyPoints": ["Request-response cycle", "Global processing", "Layered architecture"],
-    "followUps": ["How do you create custom middleware?", "Order of execution?", "Use cases?"],
+    "id": 2,
+    "question": "What are the Features of using Django?",
+    "answer": "Django comes with several built-in features that make web development faster and more efficient:\n- Object-Relational Mapper (ORM): Simplifies database operations with Python objects.\n- Web Templating System: Dynamically generates HTML content.\n- Middleware Support: Handles request/response processing globally.\n- URL Dispatcher: Uses clean, regex-based (and now path-based) routing.\n- Admin Interface: Auto-generated admin panel for managing data.\n- Unit Testing Framework: Built-in tools for testing applications.\n- SEO Optimized: Supports human-readable URLs and metadata handling.\n- Security Features: Protection against CSRF, XSS, SQL Injection, etc.\n- Code Reusability & Inheritance: Encourages modular, maintainable apps.\n- Flexible Deployment: Compatible with multiple databases and server setups.",
     "category": "Django"
   },
   {
-    "id": 203,
-    "question": "Explain Django signals",
-    "answer": "Signals allow decoupled applications to get notified when certain actions occur. They follow the observer pattern. Common signals: pre_save, post_save, pre_delete, post_delete. Example: sending an email after a user registers.",
-    "keyPoints": ["Observer pattern", "Decoupling", "Event handling"],
-    "followUps": ["When to use signals?", "Can you chain signals?", "Performance considerations?"],
+    "id": 3,
+    "question": "What is the architecture of Django?",
+    "answer": "Django follows the MVT (Model-View-Template) architecture, which is a slight variation of the well-known MVC (Model-View-Controller) pattern:\n- Model: Handles the data-related logic and interacts with the database using the ORM.\n- View: Contains the business logic, fetches data from the Model, and passes it to the Template.\n- Template: Handles the user interface and presentation layer (HTML/CSS/JS).\nIn Django, the framework itself acts as the 'Controller' by routing URLs to the appropriate views.",
     "category": "Django"
   },
   {
-    "id": 204,
-    "question": "What is Django REST Framework?",
-    "answer": "Django REST Framework (DRF) is a powerful library for building REST APIs in Django. It provides serializers for data validation, viewsets for CRUD operations, authentication, permissions, and pagination out of the box.",
-    "keyPoints": ["REST API building", "Serializers", "Authentication & permissions"],
-    "followUps": ["Difference between APIView and ViewSet?", "How to handle authentication?", "Custom permissions?"],
+    "id": 4,
+    "question": "How to create a project and an app in Django?",
+    "answer": "To create a Django project, run the following command in your terminal:\n`django-admin startproject project_name` \nThis creates the basic configuration for your website.\nTo create an app within that project, navigate to the project directory and run:\n`python manage.py startapp app_name` \nApps are specific modules meant for specific functionalities, like 'authentication', 'blog', or 'payment'.",
     "category": "Django"
   },
   {
-    "id": 205,
-    "question": "Explain Django migrations",
-    "answer": "Migrations are a way to manage database schema changes in Django. They track changes to models and allow you to apply or revert changes across environments. Use 'makemigrations' to create migrations and 'migrate' to apply them.",
-    "keyPoints": ["Schema versioning", "Reversible changes", "Environment consistency"],
-    "followUps": ["How to handle data migrations?", "Conflict resolution?", "Best practices?"],
+    "id": 5,
+    "question": "What is the difference between a project and an app in Django?",
+    "answer": "A project is the entire web application, consisting of one or more apps and project-level configurations (like database settings and middleware). An app is a web application that does something specifically (e.g., a blog system, a database of public records, or a simple poll app). A project can contain multiple apps, and an app can be used in multiple projects.",
+    "category": "Django"
+  },
+  {
+    "id": 6,
+    "question": "What is the purpose of settings.py?",
+    "answer": "The settings.py file is the main configuration file for a Django project. It contains all the settings for the project, such as:\n- INSTALLED_APPS: A list of apps that are active in the project.\n- DATABASES: Configuration for database connections.\n- MIDDLEWARE: A list of middleware classes used by the project.\n- TEMPLATES: Configuration for the template engine.\n- STATIC_URL and MEDIA_URL: Settings for static and media file handling.",
+    "category": "Django"
+  },
+  {
+    "id": 7,
+    "question": "What is the purpose of urls.py?",
+    "answer": "The urls.py file acts as the URL dispatcher for the Django project. It contains a list of URL patterns that are mapped to specific view functions or classes. When a user requests a URL, Django searches through these patterns to find a match and then calls the associated view to handle the request.",
+    "category": "Django"
+  },
+  {
+    "id": 8,
+    "question": "What is a Django Model?",
+    "answer": "A Django Model is a Python class that represents a single table in the database. Each attribute of the class corresponds to a database field. Models are the single, definitive source of information about your data, and they contain the essential fields and behaviors of the data you’re storing.",
+    "category": "Django"
+  },
+  {
+    "id": 9,
+    "question": "What are Django Migrations?",
+    "answer": "Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema. They are designed to be mostly automatic, but you'll need to know when to create migrations, when to run them, and the common problems you might run into.\n- `makemigrations`: Creates new migration files based on model changes.\n- `migrate`: Applies the migrations to the database.",
+    "category": "Django"
+  },
+  {
+    "id": 10,
+    "question": "What is the Django Admin interface?",
+    "answer": "One of the most powerful parts of Django is the automatic admin interface. It reads metadata from your models to provide a quick, model-centric interface where trusted users can manage content on your site. You don't have to build a custom backend to manage your database; Django creates one for you automatically.",
+    "category": "Django"
+  },
+  {
+    "id": 11,
+    "question": "What is a View in Django?",
+    "answer": "A view function, or view for short, is a Python function that takes a Web request and returns a Web response. This response can be the HTML contents of a Web page, a redirect, a 404 error, an XML document, or an image . . . or anything, really. The view itself contains whatever arbitrary logic is necessary to return that response.",
+    "category": "Django"
+  },
+  {
+    "id": 12,
+    "question": "What is the Django Template Language (DTL)?",
+    "answer": "Django's template engine provides a mini-language for defining the user-facing layer of the application. It allows you to use variables, tags, and filters to generate dynamic HTML. Key features include:\n- Variables: `{{ variable_name }}`\n- Tags: `{% tag_name %}` for logic like loops and if-statements.\n- Filters: `{{ value|filter_name }}` for formatting data.",
+    "category": "Django"
+  },
+  {
+    "id": 13,
+    "question": "What is the purpose of the manage.py file?",
+    "answer": "manage.py is a command-line utility that lets you interact with this Django project in various ways. It’s a thin wrapper around `django-admin` that automatically sets the `DJANGO_SETTINGS_MODULE` environment variable so that it points to your project’s settings.py file. You use it to run the server, create migrations, apply them, create superusers, etc.",
+    "category": "Django"
+  },
+  {
+    "id": 14,
+    "question": "How do you filter data in a QuerySet?",
+    "answer": "You can filter data using the `filter()` method on a model's manager. For example:\n`Entry.objects.filter(pub_date__year=2006)`\nThis returns a new QuerySet containing only the objects that match the specified lookup parameters. You can also chain multiple filters together.",
+    "category": "Django"
+  },
+  {
+    "id": 15,
+    "question": "What is the difference between filter() and exclude()?",
+    "answer": "- `filter(**kwargs)`: Returns a new QuerySet containing objects that match the given lookup parameters.\n- `exclude(**kwargs)`: Returns a new QuerySet containing objects that do NOT match the given lookup parameters.",
+    "category": "Django"
+  },
+  {
+    "id": 16,
+    "question": "What is the difference between null=True and blank=True?",
+    "answer": "- `null=True`: This is database-related. It allows the database to store a NULL value for that field if it is empty. It's used for fields that are not required in the database.\n- `blank=True`: This is validation-related. It allows the field to be empty in forms. If a field has `blank=True`, form validation will allow entry of an empty value. If it's `False`, the field will be required.",
+    "category": "Django"
+  },
+  {
+    "id": 17,
+    "question": "What are Django signals?",
+    "answer": "Django includes a 'signal dispatcher' which helps decoupled applications get notified when actions occur elsewhere in the framework. In a nutshell, signals allow certain senders to notify a set of receivers that some action has taken place. They are especially useful when many pieces of code might be interested in the same events.",
+    "category": "Django"
+  },
+  {
+    "id": 18,
+    "question": "What is the purpose of the __init__.py file in an app directory?",
+    "answer": "The __init__.py file is required to make Python treat the directory as a package. In Django, it is often empty, but its presence allows you to import models, views, and other components from your app using standard Python import syntax.",
+    "category": "Django"
+  },
+  {
+    "id": 19,
+    "question": "What is the difference between a Function-Based View (FBV) and a Class-Based View (CBV)?",
+    "answer": "- Function-Based View (FBV): A simple Python function that takes a request and returns a response. It's easy to read and write but can lead to code duplication for complex logic.\n- Class-Based View (CBV): Uses Python classes and inheritance to organize view logic. It allows for better code reuse through mixins and generic views, but it can be harder to understand for beginners.",
+    "category": "Django"
+  },
+  {
+    "id": 20,
+    "question": "What are Class-Based Generic Views?",
+    "answer": "Generic views are a set of built-in CBVs that handle common tasks such as displaying a list of objects (`ListView`), a detail view of a single object (`DetailView`), or creating/updating objects (`CreateView`, `UpdateView`). They significantly reduce the amount of boilerplate code you need to write.",
+    "category": "Django"
+  },
+  {
+    "id": 21,
+    "question": "What is Middleware in Django?",
+    "answer": "Middleware is a framework of hooks into Django’s request/response processing. It’s a light, low-level 'plugin' system for globally altering Django’s input or output. Each middleware component is responsible for doing some specific function, such as authentication, session management, or CSRF protection.",
+    "category": "Django"
+  },
+  {
+    "id": 22,
+    "question": "What is the difference between static and media files in Django?",
+    "answer": "- Static files: These are files that are part of the application itself (CSS, JavaScript, images used in the layout). They are generally kept in a `static/` directory and served by the web server in production.\n- Media files: These are user-uploaded files (profile pictures, documents). They are stored in a `media/` directory, and their path is stored in the database.",
+    "category": "Django"
+  },
+  {
+    "id": 23,
+    "question": "What is the purpose of collectstatic command?",
+    "answer": "The `collectstatic` command gathers static files from each of your applications (and any other places you've specified) into a single location (`STATIC_ROOT`) so that they can be easily served by a web server like Nginx or Apache in a production environment.",
+    "category": "Django"
+  },
+  {
+    "id": 24,
+    "question": "What is the Django ORM?",
+    "answer": "The Object-Relational Mapper (ORM) allows you to interact with your database using Python code instead of writing raw SQL. It handles the translation between Python objects and database tables, providing a powerful and secure way to manage data.",
+    "category": "Django"
+  },
+  {
+    "id": 25,
+    "question": "Explain the difference between select_related and prefetch_related.",
+    "answer": "- `select_related`: Works by creating a SQL join and including the fields of the related object in the SELECT statement. It is used for foreign key and one-to-one relationships (forward relationships).\n- `prefetch_related`: Does a separate lookup for each relationship and does the 'joining' in Python. It is used for many-to-many and reverse foreign key relationships to avoid the 'N+1 queries' problem.",
+    "category": "Django"
+  },
+  {
+    "id": 26,
+    "question": "What is a Django Form?",
+    "answer": "Django's form system handles many of the common tasks related to web forms: generating HTML forms, validating user input, and converting it to Python data types. It provides a way to define form fields and their validation rules in a centralized way.",
+    "category": "Django"
+  },
+  {
+    "id": 27,
+    "question": "What is a ModelForm in Django?",
+    "answer": "A `ModelForm` is a helper class that allows you to create a form directly from a Django model. It automatically generates form fields based on the model's fields, handles validation based on the model's constraints, and provides a `save()` method to create or update model instances.",
+    "category": "Django"
+  },
+  {
+    "id": 28,
+    "question": "How do you handle user authentication in Django?",
+    "answer": "Django comes with a built-in authentication system that handles user accounts, groups, permissions and cookie-based user sessions. It provides ready-to-use views for login, logout, and password management, as well as a flexible API for custom authentication needs.",
+    "category": "Django"
+  },
+  {
+    "id": 29,
+    "question": "What is the purpose of the CSRF token in Django forms?",
+    "answer": "Cross-Site Request Forgery (CSRF) protection is a security feature that prevents malicious websites from making unauthorized requests on behalf of a user. Django includes a CSRF token in every POST form to verify that the request originated from the same site.",
+    "category": "Django"
+  },
+  {
+    "id": 30,
+    "question": "What is a QuerySet in Django?",
+    "answer": "A QuerySet represents a collection of objects from your database. It can have zero, one, or many filters. Filters narrow down the query results based on given parameters. QuerySets are lazy; the act of creating a QuerySet doesn’t involve any database activity until it's evaluated.",
+    "category": "Django"
+  },
+  {
+    "id": 31,
+    "question": "What are Q objects in Django?",
+    "answer": "Q objects are used to create complex queries that involve logical OR or NOT conditions. While standard `filter()` arguments are combined using AND, Q objects allow you to combine lookups using the `|` (OR) and `~` (NOT) operators.",
+    "category": "Django"
+  },
+  {
+    "id": 32,
+    "question": "What are F expressions in Django?",
+    "answer": "F expressions allow you to refer to model field values directly in the database, without having to pull them into Python memory. This is useful for performing atomic updates (like incrementing a value) and comparing fields within the same model instance.",
+    "category": "Django"
+  },
+  {
+    "id": 33,
+    "question": "How do you implement pagination in Django?",
+    "answer": "Django provides a `Paginator` class to manage paginated data. You wrap your QuerySet in a `Paginator` object, specify the number of items per page, and then use the `page()` method to retrieve the objects for a specific page number.",
+    "category": "Django"
+  },
+  {
+    "id": 34,
+    "question": "What is the purpose of template inheritance in Django?",
+    "answer": "Template inheritance allows you to build a base 'skeleton' template that contains all the common parts of your site and defines blocks that child templates can override. This makes it easy to maintain a consistent layout across your entire application.",
+    "category": "Django"
+  },
+  {
+    "id": 35,
+    "question": "What is the difference between render() and redirect()?",
+    "answer": "- `render()`: Combines a given template with a given context dictionary and returns an `HttpResponse` object with that rendered text. It's used to display a page.\n- `redirect()`: Returns an `HttpResponseRedirect` to the appropriate URL for the arguments passed. It's used to send the user to a different page after an action (like submitting a form).",
+    "category": "Django"
+  },
+  {
+    "id": 36,
+    "question": "What are context processors in Django?",
+    "answer": "A context processor is a function that takes a request object as its argument and returns a dictionary of data to be added to the template context. This is useful for making certain data (like the current user or site settings) available in every template without having to pass it manually in every view.",
+    "category": "Django"
+  },
+  {
+    "id": 37,
+    "question": "What is the Django REST Framework (DRF)?",
+    "answer": "The Django REST Framework is a powerful and flexible toolkit for building Web APIs. It provides a standard way to handle serialization, authentication, permissions, and routing, making it easy to build RESTful services with Django.",
+    "category": "Django"
+  },
+  {
+    "id": 38,
+    "question": "What is a Serializer in DRF?",
+    "answer": "Serializers allow complex data such as QuerySets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML, or other content types. They also provide deserialization, allowing parsed data to be converted back into complex types after validating the incoming data.",
+    "category": "Django"
+  },
+  {
+    "id": 39,
+    "question": "What are ViewSets and Routers in DRF?",
+    "answer": "- `ViewSets`: Allow you to combine the logic for multiple related views (like list, create, retrieve, update, delete) into a single class.\n- `Routers`: Provide a consistent and automated way of defining the URL patterns for your API based on the ViewSets.",
+    "category": "Django"
+  },
+  {
+    "id": 40,
+    "question": "How do you handle authentication in DRF?",
+    "answer": "DRF provides several built-in authentication schemes such as `TokenAuthentication`, `SessionAuthentication`, and `BasicAuthentication`. You can configure these globally in your settings or per-view to control how users are authenticated in your API.",
+    "category": "Django"
+  },
+  {
+    "id": 41,
+    "question": "What is the difference between APIView and GenericAPIView in DRF?",
+    "answer": "- `APIView`: The basic class for building API views. You define your own logic for GET, POST, etc.\n- `GenericAPIView`: Extends `APIView` and adds support for common patterns like QuerySets and Serializer classes. It's often used with mixins to provide standard CRUD functionality.",
+    "category": "Django"
+  },
+  {
+    "id": 42,
+    "question": "What are permissions in DRF?",
+    "answer": "Permissions are used to grant or deny access to different parts of your API. DRF includes several built-in permission classes (like `IsAuthenticated`, `AllowAny`, `IsAdminUser`) and allows you to create custom ones for specific business rules.",
+    "category": "Django"
+  },
+  {
+    "id": 43,
+    "question": "How do you optimize a Django application for performance?",
+    "answer": "Common optimization techniques include:\n- Using `select_related` and `prefetch_related` to minimize database queries.\n- Implementing caching at various levels (view, template, or low-level API).\n- Optimizing database indexes.\n- Using a fast web server like Gunicorn or uWSGI.\n- Minimizing and bundling static assets.",
+    "category": "Django"
+  },
+  {
+    "id": 44,
+    "question": "What is the difference between Django and Flask?",
+    "answer": "- Django: A high-level 'batteries-included' framework that provides many built-in features (ORM, Admin, Auth). It's great for large, complex applications.\n- Flask: A 'micro' framework that is lightweight and flexible. It gives you the bare essentials and lets you choose the libraries you want to use for everything else. It's ideal for small apps and microservices.",
+    "category": "Django"
+  },
+  {
+    "id": 45,
+    "question": "Explain database transactions in Django.",
+    "answer": "Django provides an API for managing database transactions. Using `transaction.atomic()`, you can ensure that a block of code is executed within a single transaction. If any part of the block fails, the whole transaction is rolled back, ensuring data consistency.",
+    "category": "Django"
+  },
+  {
+    "id": 46,
+    "question": "How do you create custom management commands?",
+    "answer": "You create a Python file in your app's `management/commands/` directory. The class within this file should inherit from `BaseCommand` and implement the `handle()` method, where you define the logic for your custom command.",
+    "category": "Django"
+  },
+  {
+    "id": 47,
+    "question": "What is the difference between WSGI and ASGI?",
+    "answer": "- WSGI (Web Server Gateway Interface): The traditional standard for synchronous Python web applications. It handles one request at a time.\n- ASGI (Asynchronous Server Gateway Interface): The successor to WSGI, adding support for asynchronous features like WebSockets and HTTP/2. It's used for real-time features and high-concurrency needs.",
+    "category": "Django"
+  },
+  {
+    "id": 48,
+    "question": "What is the site-wide cache in Django?",
+    "answer": "Site-wide cache is a middleware-based caching system that caches every page of your site. It's the simplest way to cache your site and can provide a huge performance boost for sites with mostly static content.",
+    "category": "Django"
+  },
+  {
+    "id": 49,
+    "question": "What is the low-level cache API?",
+    "answer": "The low-level cache API allow you to cache specific data or objects manually using a key-value store. You can use it to store the results of expensive calculations or database queries for a set period of time.",
+    "category": "Django"
+  },
+  {
+    "id": 50,
+    "question": "How do you handle environment variables in Django?",
+    "answer": "Environment variables are used to keep sensitive configuration (like secret keys and database passwords) out of your code. You can use libraries like `python-dotenv` or `django-environ` to load these variables from a `.env` file into your Django settings.",
+    "category": "Django"
+  },
+  {
+    "id": 51,
+    "question": "How do you stay updated with Django developments?",
+    "answer": "You can follow the official Django website, subscribe to the 'Django Users' or 'Django Developers' mailing lists, follow prominent Django community members on social media, and read blogs like 'Django Weekly' or 'Simple is Better than Complex'.",
     "category": "Django"
   }
 ]

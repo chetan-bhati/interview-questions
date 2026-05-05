@@ -3,40 +3,30 @@
     "id": 801,
     "question": "What is Docker and what are its benefits?",
     "answer": "Docker containerizes applications with dependencies into isolated environments. Benefits: consistency across environments, easy deployment, lightweight (vs VMs), rapid scaling, microservices support. Consists of images (blueprints) and containers (running instances).",
-    "keyPoints": ["Container technology", "Environment consistency", "Lightweight"],
-    "followUps": ["Docker vs VMs?", "Dockerfile instructions?", "Docker networks?"],
     "category": "Docker"
   },
   {
     "id": 802,
     "question": "Explain Dockerfile and Docker layers",
     "answer": "Dockerfile defines image structure with commands like FROM, RUN, COPY, CMD. Each command creates a layer. Layers are cached and reused, enabling fast builds. Optimize by placing frequently-changed instructions later.",
-    "keyPoints": ["Image definition", "Layer caching", "Build optimization"],
-    "followUps": ["Multi-stage builds?", "Best practices?", "Minimizing image size?"],
     "category": "Docker"
   },
   {
     "id": 803,
     "question": "What is Docker Compose?",
     "answer": "Docker Compose defines multi-container applications in a YAML file. One command (docker-compose up) starts all services. Features: service definition, environment variables, networking, volumes. Ideal for local development and testing.",
-    "keyPoints": ["Multi-container orchestration", "YAML definition", "Easy networking"],
-    "followUps": ["Services vs containers?", "Volume management?", "Environment variables?"],
     "category": "Docker"
   },
   {
     "id": 804,
     "question": "Explain Docker networking",
     "answer": "Docker provides multiple network drivers: bridge (default), host, overlay (for swarm). Services on same network can communicate via service names. Enables container-to-container communication and external connectivity.",
-    "keyPoints": ["Network drivers", "Service discovery", "Communication"],
-    "followUps": ["Port mapping?", "Network isolation?", "Custom networks?"],
     "category": "Docker"
   },
   {
     "id": 805,
     "question": "What are Docker volumes and when to use them?",
     "answer": "Volumes persist data beyond container lifecycle. Types: named volumes, bind mounts, tmpfs. Use for: databases, logs, config files, shared data between containers. Volumes are managed by Docker, making them more portable.",
-    "keyPoints": ["Data persistence", "Container lifecycle", "Portability"],
-    "followUps": ["Named vs bind mounts?", "Volume drivers?", "Backup strategies?"],
     "category": "Docker"
   }
 ]

@@ -2,241 +2,181 @@
   {
     "id": 1,
     "question": "Tell me about yourself",
-    "answer": "I am a software developer with around 3–5 years of experience, primarily working with backend technologies like Python and web frameworks. I have experience building scalable APIs, optimizing performance, and working on end-to-end backend systems. I enjoy solving real-world problems and continuously improving my technical skills. Currently, I am looking for opportunities where I can grow further and contribute to more complex systems.",
-    "keyPoints": ["Professional summary", "Experience highlight", "Growth mindset"],
-    "followUps": ["What projects have you worked on?", "What are your strengths?", "Why are you looking for a change?"],
+    "answer": "I am a software developer with around 3\u20135 years of experience, primarily working with backend technologies like Python and web frameworks. I have experience building scalable APIs, optimizing performance, and working on end-to-end backend systems. I enjoy solving real-world problems and continuously improving my technical skills. Currently, I am looking for opportunities where I can grow further and contribute to more complex systems.",
     "category": "HR"
   },
   {
     "id": 2,
     "question": "Why are you looking for a job change?",
     "answer": "I am looking for new opportunities to grow technically and take on more challenging problems. While I have gained valuable experience in my current role, I now want to work on more complex systems and collaborate with strong engineering teams. My goal is to continue improving my skills and contribute to impactful projects.",
-    "keyPoints": ["Career growth", "Learning mindset", "Positive reason"],
-    "followUps": ["What are you looking for in your next role?", "What challenges are you expecting?", "Why this company?"],
     "category": "HR"
   },
   {
     "id": 3,
     "question": "What are your strengths?",
     "answer": "My strengths include problem-solving, ownership, and writing clean and maintainable code. I take responsibility for tasks end-to-end and focus on delivering reliable solutions. I also work well in team environments and communicate effectively to ensure smooth collaboration.",
-    "keyPoints": ["Ownership", "Problem-solving", "Team collaboration"],
-    "followUps": ["Can you give an example?", "How do you handle pressure?", "What is your biggest achievement?"],
     "category": "HR"
   },
   {
     "id": 4,
     "question": "What is your weakness?",
     "answer": "Earlier, I used to focus too much on perfection, which sometimes affected delivery speed. Over time, I have learned to balance quality with timelines by prioritizing effectively and focusing on what delivers the most value. This has helped me improve both efficiency and productivity.",
-    "keyPoints": ["Self-awareness", "Improvement mindset", "Balanced approach"],
-    "followUps": ["How did you improve?", "Is it still a challenge?", "What did you learn?"],
     "category": "HR"
   },
   {
     "id": 5,
     "question": "What motivates you at work?",
     "answer": "I am motivated by solving real-world problems and building reliable systems that create value for users. I enjoy improving performance, learning new technologies, and seeing the impact of my work on products and teams. Continuous learning and meaningful contribution keep me motivated.",
-    "keyPoints": ["Problem-solving", "Learning", "Impact"],
-    "followUps": ["Example of impact?", "What drives you daily?", "What challenges excite you?"],
     "category": "HR"
   },
   {
     "id": 6,
     "question": "How do you handle pressure or tight deadlines?",
     "answer": "I stay calm and focus on breaking tasks into smaller, manageable parts. I prioritize based on urgency and impact, and maintain clear communication with the team. This structured approach helps me stay productive and deliver quality work even under tight deadlines.",
-    "keyPoints": ["Calm mindset", "Prioritization", "Communication"],
-    "followUps": ["Example of deadline pressure?", "How do you avoid burnout?", "How do you manage expectations?"],
     "category": "HR"
   },
   {
     "id": 7,
     "question": "How do you manage multiple tasks?",
     "answer": "I prioritize tasks based on urgency and impact, and plan my work accordingly. I keep track of deadlines and ensure regular communication with stakeholders. This helps me stay organized and ensures that important tasks are completed on time.",
-    "keyPoints": ["Task prioritization", "Planning", "Communication"],
-    "followUps": ["What tools do you use?", "How do you handle interruptions?", "How do you reprioritize?"],
     "category": "HR"
   },
   {
     "id": 8,
     "question": "How do you handle disagreements with seniors?",
     "answer": "I handle disagreements respectfully by sharing my perspective with clear reasoning. I also try to understand the other person's viewpoint. If needed, I align with the final decision while maintaining a collaborative approach, as team success is more important.",
-    "keyPoints": ["Respectful communication", "Open mindset", "Team focus"],
-    "followUps": ["Example of disagreement?", "How do you convince others?", "What if you strongly disagree?"],
     "category": "HR"
   },
   {
     "id": 9,
     "question": "How do you handle conflicts in a team?",
     "answer": "I approach conflicts calmly and focus on understanding both sides. I encourage open communication and try to find a solution that benefits the team. My goal is always to resolve issues constructively without affecting team collaboration.",
-    "keyPoints": ["Calm approach", "Communication", "Solution-focused"],
-    "followUps": ["Example?", "How do you prevent conflicts?", "How do you handle repeated issues?"],
     "category": "HR"
   },
   {
     "id": 10,
     "question": "Tell me about a time you solved a difficult problem.",
     "answer": "I faced a situation where system performance was impacting user experience. I analyzed the root cause, identified bottlenecks, and implemented an optimized solution. This significantly improved efficiency and reduced processing time, leading to a better user experience.",
-    "keyPoints": ["Problem analysis", "Optimization", "Impact"],
-    "followUps": ["What tools did you use?", "What was the outcome?", "What did you learn?"],
     "category": "HR"
   },
   {
     "id": 11,
     "question": "Tell me about a failure and what you learned.",
     "answer": "Earlier in my career, I sometimes spent too much time trying to perfect solutions. I learned that balancing quality with delivery timelines is important. Since then, I focus on delivering value efficiently while continuously improving.",
-    "keyPoints": ["Learning from mistakes", "Adaptability", "Growth mindset"],
-    "followUps": ["What would you do differently?", "How did it affect your work?", "What changed after that?"],
     "category": "HR"
   },
   {
     "id": 12,
     "question": "Tell me about a time you took ownership.",
     "answer": "I took ownership of a feature from design to deployment, ensuring everything worked smoothly. I handled implementation, testing, and deployment while coordinating with the team. This helped deliver the feature successfully and improved system reliability.",
-    "keyPoints": ["End-to-end ownership", "Responsibility", "Execution"],
-    "followUps": ["Challenges faced?", "How did you ensure quality?", "What was the result?"],
     "category": "HR"
   },
   {
     "id": 13,
     "question": "What are your career goals?",
     "answer": "My short-term goal is to grow as a strong backend engineer and work on scalable systems. Long-term, I aim to take on architectural responsibilities and contribute to designing high-impact platforms.",
-    "keyPoints": ["Clear direction", "Technical growth", "Long-term vision"],
-    "followUps": ["How will you achieve this?", "What skills are you improving?", "Why backend?"],
     "category": "HR"
   },
   {
     "id": 14,
     "question": "What kind of work environment do you prefer?",
     "answer": "I prefer a collaborative environment where team members communicate openly and support each other. A culture focused on learning, ownership, and continuous improvement helps me perform at my best.",
-    "keyPoints": ["Collaboration", "Learning culture", "Ownership"],
-    "followUps": ["Team vs individual work?", "How do you adapt?", "What motivates you in a team?"],
     "category": "HR"
   },
   {
     "id": 15,
     "question": "Why should we hire you?",
     "answer": "I bring strong backend development experience along with a problem-solving mindset and ownership. I focus on building reliable and scalable systems, and I continuously work on improving my skills. I am confident I can contribute effectively to your team and deliver value.",
-    "keyPoints": ["Skills + experience", "Ownership", "Value contribution"],
-    "followUps": ["What makes you different?", "Biggest achievement?", "How do you add value?"],
     "category": "HR"
   },
   {
     "id": 16,
     "question": "Where do you see yourself in the next 5 years?",
     "answer": "In the next five years, I see myself growing into a strong and reliable backend engineer, contributing to scalable systems and complex problem-solving. I also aim to take on more responsibilities in system design and mentoring, while continuously improving my technical and architectural skills.",
-    "keyPoints": ["Long-term vision", "Growth mindset", "Technical progression"],
-    "followUps": ["What steps are you taking to reach this goal?", "Do you see yourself in leadership?", "Why backend specifically?"],
     "category": "HR"
   },
   {
     "id": 17,
     "question": "What skills are you currently improving?",
     "answer": "I am currently focusing on improving my system design skills, performance optimization techniques, and understanding of scalable architectures. I also invest time in learning modern tools and frameworks that help build efficient and maintainable systems.",
-    "keyPoints": ["Continuous learning", "Relevant skills", "Growth focus"],
-    "followUps": ["How do you learn new skills?", "What resources do you use?", "Can you give an example of applying a new skill?"],
     "category": "HR"
   },
   {
     "id": 18,
     "question": "Why do you want to join our company?",
     "answer": "I am interested in your company because of your focus on building scalable and modern systems. The role aligns well with my experience and growth goals. I believe working with your team will help me learn, contribute, and take on more challenging responsibilities.",
-    "keyPoints": ["Company alignment", "Growth opportunity", "Interest in role"],
-    "followUps": ["What do you know about us?", "What excites you about this role?", "Why not other companies?"],
     "category": "HR"
   },
   {
     "id": 19,
     "question": "What do you know about our company?",
     "answer": "From my research, I understand that your company focuses on building scalable and efficient solutions in your domain. You emphasize innovation, modern technologies, and strong engineering practices, which aligns well with my interests and experience.",
-    "keyPoints": ["Research effort", "Alignment", "Awareness"],
-    "followUps": ["What products do we build?", "What interests you most?", "How can you contribute here?"],
     "category": "HR"
   },
   {
     "id": 20,
     "question": "What is your expected salary?",
     "answer": "Based on my experience, skills, and industry standards, I have a salary range in mind. However, I am flexible and open to discussion depending on the role, responsibilities, and overall growth opportunities.",
-    "keyPoints": ["Confidence", "Flexibility", "Market awareness"],
-    "followUps": ["What is your current salary?", "Are you open to negotiation?", "What matters more—salary or growth?"],
     "category": "HR"
   },
   {
     "id": 21,
     "question": "Are you holding any offers?",
     "answer": "I am currently exploring a few opportunities and in discussion stages. My focus is to find the right role that aligns with my skills and long-term goals rather than making a rushed decision.",
-    "keyPoints": ["Honesty", "Balanced answer", "Focus on fit"],
-    "followUps": ["What is your timeline?", "How soon can you decide?", "What factors matter most?"],
     "category": "HR"
   },
   {
     "id": 22,
     "question": "Why do you think you deserve this salary?",
     "answer": "I believe my experience in building scalable systems, problem-solving ability, and consistent delivery of quality work justify my expectations. I focus on creating value for the product and team, which aligns with industry standards for my experience level.",
-    "keyPoints": ["Value-based reasoning", "Confidence", "Experience alignment"],
-    "followUps": ["What impact have you created?", "How do you measure value?", "What differentiates you?"],
     "category": "HR"
   },
   {
     "id": 23,
     "question": "What will you do if you miss a deadline?",
     "answer": "If I miss a deadline, I first take responsibility and analyze the reason behind it. I communicate transparently with stakeholders and work on a recovery plan. I also ensure that I learn from the situation to avoid similar issues in the future.",
-    "keyPoints": ["Accountability", "Communication", "Learning mindset"],
-    "followUps": ["Have you missed deadlines before?", "What did you learn?", "How do you prevent it?"],
     "category": "HR"
   },
   {
     "id": 24,
     "question": "How do you ensure quality in your work?",
     "answer": "I ensure quality by following best practices like writing clean and maintainable code, performing proper testing, and reviewing my work before delivery. I also collaborate with teammates for feedback and continuously improve based on learnings.",
-    "keyPoints": ["Code quality", "Testing", "Continuous improvement"],
-    "followUps": ["Do you follow code reviews?", "What tools do you use?", "How do you handle bugs?"],
     "category": "HR"
   },
   {
     "id": 25,
     "question": "Tell me about a time you helped a teammate.",
     "answer": "I helped a teammate who was facing difficulty in understanding a feature implementation. I explained the approach, walked through the logic, and supported them until they were comfortable. This improved team collaboration and ensured timely delivery.",
-    "keyPoints": ["Team support", "Collaboration", "Knowledge sharing"],
-    "followUps": ["How often do you help others?", "Do you mentor juniors?", "How do you handle knowledge gaps?"],
     "category": "HR"
   },
   {
     "id": 26,
     "question": "How do you handle working with difficult people?",
     "answer": "I handle such situations professionally by staying calm and focusing on work rather than personal differences. I try to understand their perspective and communicate clearly to avoid misunderstandings. My goal is to maintain a positive and productive work environment.",
-    "keyPoints": ["Professionalism", "Communication", "Emotional control"],
-    "followUps": ["Can you give an example?", "What if conflict continues?", "How do you stay calm?"],
     "category": "HR"
   },
   {
     "id": 27,
     "question": "What would you do if your manager is wrong?",
     "answer": "I would respectfully share my perspective with clear reasoning and data if possible. If the decision still stands, I would support it and focus on execution, as alignment and teamwork are important for success.",
-    "keyPoints": ["Respect", "Logical reasoning", "Team alignment"],
-    "followUps": ["Have you faced this before?", "How do you present your opinion?", "What if it impacts results?"],
     "category": "HR"
   },
   {
     "id": 28,
-    "question": "How do you make decisions when you don’t have enough information?",
+    "question": "How do you make decisions when you don\u2019t have enough information?",
     "answer": "In such cases, I gather as much relevant information as possible, assess risks, and make a reasonable decision based on available data. I also keep stakeholders informed and remain flexible to adjust if new information comes in.",
-    "keyPoints": ["Analytical thinking", "Risk awareness", "Adaptability"],
-    "followUps": ["Example?", "How do you handle uncertainty?", "What if decision fails?"],
     "category": "HR"
   },
   {
     "id": 29,
     "question": "How long do you plan to stay with us?",
     "answer": "I am looking for a long-term opportunity where I can grow, contribute, and take on meaningful responsibilities. Stability and continuous learning are important to me, so I prefer to stay and build impact over time.",
-    "keyPoints": ["Commitment", "Stability", "Growth mindset"],
-    "followUps": ["What makes you stay in a company?", "What would make you leave?", "What motivates long-term engagement?"],
     "category": "HR"
   },
   {
     "id": 30,
     "question": "Why did you choose software development as a career?",
     "answer": "I chose software development because I enjoy solving problems and building systems that have real-world impact. The field also offers continuous learning and opportunities to work on diverse challenges, which keeps me engaged and motivated.",
-    "keyPoints": ["Interest in problem-solving", "Passion", "Learning"],
-    "followUps": ["What excites you most?", "What challenges do you enjoy?", "Why backend?"],
     "category": "HR"
   }
 ]

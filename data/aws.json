@@ -3,40 +3,30 @@
     "id": 701,
     "question": "What is AWS EC2 and its advantages?",
     "answer": "EC2 (Elastic Compute Cloud) provides scalable virtual servers in AWS. Advantages: pay-as-you-go pricing, auto-scaling, multiple instance types, security groups, load balancing integration, multi-region deployment.",
-    "keyPoints": ["Elastic computing", "Auto-scaling", "Cost-effective"],
-    "followUps": ["Instance types?", "Security groups?", "Auto-scaling groups?"],
     "category": "AWS"
   },
   {
     "id": 702,
     "question": "Explain AWS S3 and its use cases",
     "answer": "S3 (Simple Storage Service) is object storage for files, backups, media. Features: durability (99.999999999%), availability zones, versioning, lifecycle policies, encryption. Use cases: backups, static websites, data lakes, log storage.",
-    "keyPoints": ["Object storage", "High durability", "Unlimited scalability"],
-    "followUps": ["Versioning and lifecycle?", "Access control?", "CloudFront integration?"],
     "category": "AWS"
   },
   {
     "id": 703,
     "question": "What is AWS RDS and when to use it?",
     "answer": "RDS (Relational Database Service) is managed relational database. Supports MySQL, PostgreSQL, MariaDB, Oracle. Features: automated backups, multi-AZ, read replicas, automatic failover. Use when you need managed relational databases.",
-    "keyPoints": ["Managed service", "Automated backups", "Multi-AZ redundancy"],
-    "followUps": ["Read replicas?", "Backup strategy?", "When to use DynamoDB instead?"],
     "category": "AWS"
   },
   {
     "id": 704,
     "question": "Explain AWS Lambda and serverless computing",
     "answer": "Lambda executes code without managing servers. Pay per invocation. Serverless: abstracted infrastructure, auto-scaling, stateless functions. Use for: event-driven tasks, APIs, scheduled jobs, data processing.",
-    "keyPoints": ["Pay-per-use", "Auto-scaling", "Event-driven"],
-    "followUps": ["Cold starts?", "Concurrency limits?", "Integration with other services?"],
     "category": "AWS"
   },
   {
     "id": 705,
     "question": "What is AWS CloudFront?",
     "answer": "CloudFront is a CDN (Content Delivery Network) that caches and serves content from edge locations worldwide. Reduces latency, improves performance, handles DDoS protection. Integrates with S3, EC2, ELB, custom origins.",
-    "keyPoints": ["Content delivery", "Global edge locations", "Performance improvement"],
-    "followUps": ["Cache behavior?", "Invalidation?", "Origin types?"],
     "category": "AWS"
   }
 ]

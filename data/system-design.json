@@ -3,40 +3,30 @@
     "id": 601,
     "question": "What is scalability and how do you design scalable systems?",
     "answer": "Scalability is a system's ability to handle increased load. Horizontal scaling: add more servers. Vertical scaling: increase server resources. Design: stateless services, databases, caching, load balancing, database sharding, microservices architecture.",
-    "keyPoints": ["Horizontal vs vertical", "Stateless design", "Load balancing"],
-    "followUps": ["Database scaling strategies?", "When to use microservices?", "CAP theorem?"],
     "category": "System Design"
   },
   {
     "id": 602,
     "question": "Explain load balancing and its types",
     "answer": "Load balancing distributes traffic across multiple servers. Types: Round Robin, Least Connections, IP Hash, Weighted. Benefits: increased availability, better resource utilization, reduced latency. Tools: Nginx, HAProxy, AWS ELB.",
-    "keyPoints": ["Traffic distribution", "High availability", "Resource optimization"],
-    "followUps": ["Sticky sessions?", "Health checks?", "Algorithms comparison?"],
     "category": "System Design"
   },
   {
     "id": 603,
     "question": "What is caching and caching strategies?",
     "answer": "Caching stores frequently accessed data for fast retrieval. Strategies: LRU (Least Recently Used), LFU (Least Frequently Used), TTL (Time To Live). Levels: browser cache, CDN, application cache, database cache. Tools: Redis, Memcached.",
-    "keyPoints": ["Reduced latency", "Decreased load", "Cache invalidation"],
-    "followUps": ["Cache invalidation?", "Write-through vs write-back?", "Cache stampede?"],
     "category": "System Design"
   },
   {
     "id": 604,
     "question": "Explain database sharding and replication",
     "answer": "Sharding: horizontally partition data across multiple databases based on shard key. Replication: copy data across servers for redundancy and read scaling. Sharding for write scaling, replication for read scaling.",
-    "keyPoints": ["Data partitioning", "Redundancy", "Read/write scaling"],
-    "followUps": ["Choosing shard key?", "Replication lag?", "Failover strategy?"],
     "category": "System Design"
   },
   {
     "id": 605,
     "question": "What is eventual consistency and ACID properties?",
     "answer": "ACID: Atomicity, Consistency, Isolation, Durability. Ensures data integrity. Eventual consistency: system becomes consistent over time. Trade-off in distributed systems for availability and partition tolerance (CAP theorem).",
-    "keyPoints": ["Data integrity", "Distributed trade-offs", "CAP theorem"],
-    "followUps": ["BASE model?", "Conflict resolution?", "When to use each?"],
     "category": "System Design"
   }
 ]

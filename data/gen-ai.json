@@ -3,40 +3,30 @@
     "id": 1001,
     "question": "What is Generative AI and how does it work?",
     "answer": "Generative AI creates new content (text, images, code) based on patterns from training data. Uses deep learning models like transformers. Training: large datasets, billions of parameters. Inference: generate predictions based on input prompts.",
-    "keyPoints": ["Pattern learning", "Deep learning", "Content generation"],
-    "followUps": ["Transformers architecture?", "Attention mechanism?", "Training process?"],
     "category": "Gen AI"
   },
   {
     "id": 1002,
     "question": "Explain Large Language Models (LLMs)",
     "answer": "LLMs are neural networks trained on vast text data. They predict next words token-by-token. Examples: GPT, LLaMA, Claude. Capabilities: summarization, translation, Q&A, code generation. Limitations: hallucinations, knowledge cutoff, reasoning gaps.",
-    "keyPoints": ["Token prediction", "Versatility", "Current limitations"],
-    "followUps": ["Fine-tuning?", "Prompt engineering?", "Retrieval-augmented generation?"],
     "category": "Gen AI"
   },
   {
     "id": 1003,
     "question": "What is prompt engineering and its importance?",
     "answer": "Prompt engineering crafts effective inputs to elicit desired outputs from AI models. Techniques: clear instructions, examples, context, step-by-step thinking. Quality prompts significantly impact output quality and reduce hallucinations.",
-    "keyPoints": ["Input quality", "Clear instructions", "Output control"],
-    "followUps": ["Few-shot learning?", "Chain-of-thought prompting?", "Prompt templates?"],
     "category": "Gen AI"
   },
   {
     "id": 1004,
     "question": "Explain fine-tuning vs in-context learning",
     "answer": "Fine-tuning: update model weights on specific data, slow but permanent. In-context learning: provide examples in prompt, instant, temporary. Choose based on task complexity and volume. Fine-tuning for domain-specific models.",
-    "keyPoints": ["Adaptation strategies", "Training vs inference", "Use cases"],
-    "followUps": ["Transfer learning?", "Few-shot prompting?", "Cost comparison?"],
     "category": "Gen AI"
   },
   {
     "id": 1005,
     "question": "What are the ethical concerns with Generative AI?",
     "answer": "Concerns: bias in training data, misinformation generation, copyright infringement, job displacement, privacy risks. Mitigation: diverse training data, fact-checking, responsible deployment, transparent disclosure of AI use.",
-    "keyPoints": ["Bias and fairness", "Misinformation", "Privacy", "Accountability"],
-    "followUps": ["Bias detection?", "Model interpretability?", "Regulatory frameworks?"],
     "category": "Gen AI"
   }
 ]

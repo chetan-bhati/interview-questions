@@ -12,6 +12,7 @@ import awsQuestions from './aws.json'
 import dockerQuestions from './docker.json'
 import devopsQuestions from './devops.json'
 import genaiQuestions from './gen-ai.json'
+import reactQuestions from './react.json'
 
 // Combine all questions
 const allQuestions: Question[] = [
@@ -26,12 +27,13 @@ const allQuestions: Question[] = [
   ...dockerQuestions,
   ...devopsQuestions,
   ...genaiQuestions,
+  ...reactQuestions,
 ]
 
 // Get unique categories
 export const getCategories = (): string[] => {
   const categories = Array.from(new Set(allQuestions.map((q) => q.category)))
-  return ['HR', 'Python', 'Django', 'FastAPI', 'DSA', 'Coding', 'System Design', 'AWS', 'Docker', 'DevOps', 'Gen AI'].filter((c) => categories.includes(c))
+  return ['HR', 'Python', 'Django', 'FastAPI', 'DSA', 'Coding', 'System Design', 'AWS', 'Docker', 'DevOps', 'Gen AI', 'React'].filter((c) => categories.includes(c))
 }
 
 // Get question counts by category
@@ -54,9 +56,7 @@ export const searchQuestions = (query: string): Question[] => {
   return allQuestions.filter(
     (q) =>
       q.question.toLowerCase().includes(lowerQuery) ||
-      q.answer.toLowerCase().includes(lowerQuery) ||
-      q.keyPoints.some((kp) => kp.toLowerCase().includes(lowerQuery)) ||
-      q.followUps.some((fu) => fu.toLowerCase().includes(lowerQuery))
+      q.answer.toLowerCase().includes(lowerQuery)
   )
 }
 
@@ -68,9 +68,7 @@ export const searchQuestionsByCategory = (category: string, query: string): Ques
   return categoryQuestions.filter(
     (q) =>
       q.question.toLowerCase().includes(lowerQuery) ||
-      q.answer.toLowerCase().includes(lowerQuery) ||
-      q.keyPoints.some((kp) => kp.toLowerCase().includes(lowerQuery)) ||
-      q.followUps.some((fu) => fu.toLowerCase().includes(lowerQuery))
+      q.answer.toLowerCase().includes(lowerQuery)
   )
 }
 
